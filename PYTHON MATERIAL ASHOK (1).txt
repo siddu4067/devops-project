@@ -1,0 +1,1181 @@
+                          PYTHON MATERIAL
+
+Guido Van Rossum is known as the founder of python programming.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+-> what is python?,why python ?,where python ?				
+	
+ what?
+  -> python is a high level language
+  -> python is platform independent
+  -> python is a interperted language
+  -> python is a object oriented programming language(oops)
+  -> python easy to learn.
+
+ why,where?
+
+  ->easy to learn and use:
+
+         Python is easy to learn and use. It is developer-friendly and high level programming language.
+
+  ->Expressive Language:
+
+         python language is more expressive means that it is more understandable and readable.
+
+  ->Interpreted Language:
+
+	 Python is an interpreted language 
+           i.e. interpreter executes the code line by line at a time.
+           This makes debugging easy .
+
+  ->Cross-platform Language:
+
+           Python can run equally on different platforms such as Windows, Linux, Unix and Macintosh etc.
+           So, we can say that Python is a portable language.
+
+  ->Free and Open Source:
+
+           Python language is freely available at offical web address.  
+           The source-code is also available. Therefore it is open source.
+
+  -> Large Standard Library:
+
+           Python has a large and broad library and provides rich set of module and functions for rapid application development.
+ 
+  ->GUI Programming Support:
+
+           Graphical user interfaces can be developed using Python.
+
+  ->Integrated:
+
+           It can be easily integrated with language like c,c++,java.
+
+---------------------------------------------------------------------------------------------------------------------------       
+->How to install python ?
+      www.python.org
+
+
+---------------------------------------------------------------------------------------------------------------------------------
+->python version 
+
+
+
+==============================================================================================================================
+->what is editor?
+
+  editior is use to developing a code.
+
+===========================================================================================================================
+PYTHON TOPICS:
+
+->  DATA TYPES
+->  CONDITIONAL STATEMENTS
+->  LOOPS
+->  FUNCTIONS
+->  FILE HANDLING
+->  REGULAR EXPRESSION
+->  MODULES
+->  EXCEPTIONS
+->  PACKAGES
+
+==========================================================================================================================
+
+
+#DATA TYPES:
+ 
+ 1.NUMBER
+ 2.STRING
+ 3.LIST
+ 4.TUPLE
+ 5.DICTIONARY
+ 6.SET
+
+  type():
+        Using type function we can find the object type.
+
+   dir():
+         The dir() method tries to return a list of valid attributes of the object
+
+  delete():
+         to delete value in given list or given number,by using dir().
+      ex:  a='ashok'
+           dir(a)
+  
+=========================================
+1->NUMBER:
+           Using number data type we can store the numbers.
+             1.integer
+             2.float
+	     3.longint
+
+    1. integer:  
+        ex: n=123
+ 	    print(type(n))
+            print('The integer value is:', n)
+        
+
+           o/p: <class 'int'>
+                 the value is: 123
+
+   2.  float:
+         ex:  no=123.21
+             print(type(n))
+             print('float value is:', n)
+=========================================      
+2->String: 
+        Using string datatype we can store any value but it should be in single quots(' ') or double quots(" ").
+       - string is immutable.
+            
+
+       ex:  name="ashok"
+            print('Name is :',name)
+	    name1='reddy'
+            print('Name is :',name1) 
+            s=name+name1     //concatinate         
+            print(s)
+===========================================   
+3->list:  
+          List is used to store a multiple values and we can do the operation on each value based upon the index.
+          By using square brackets [] we can define a index.
+          -List is mutable object.
+
+            index   -5	   -4	   -3    -2  -1	
+           name=['ashok','vamsi','varun',123,456] 
+	     index  0      1       2      3   4
+
+       ex:
+            name=['ashok','vamsi','varun',123,456] 
+            print(type(name))
+            print(name)
+            print (name[0])
+	    del name[0]
+==============================================
+4->tuple:
+          Tuple is uesd to store a multiple values,we can do the operation based upon the index.
+          Tuple is read only object,we can not able to update,delete,and insert operation.
+          -using() we can define tuple.
+          - tuple is immutable object.
+           
+         ex:
+            bank_details=('1234','user name','password')
+                
+             print( bank_details[0])
+             print( bank_details[1])
+             print( bank_details[2])
+
+===============================================
+5->Dictionary:
+             - Dictionary is a collection of key valu pair.
+             -dictionary is used to represent data meaningfull.
+             -using {} we can define a dictionary.
+             -based on key we can do the operation on dictionary.
+	     -duplicate are not allowed.
+	     -key and value is seperated by colon(:)
+             -it is a immutable object.
+
+		ex:          key    value
+                    emp_dt={'name':'ashok','eid':123,'dept':'it'}
+			
+			print(type(emp_dt))
+                        print(emp_dt['name']) --->it will get the value 
+             
+==============================================   
+
+5-> set:
+       -set is used to store a unique values.
+       -using set we can do the set operation.
+
+      ex:  set={1,2,3,'a','b'}
+            print(type(set))
+            print(set)
+      
+
+
+===================================================================================================
+dir():
+     The dir() method tries to return a list of valid attributes of the object     
+
+
+1->list:
+
+  v=['ashok','vamsi',123,567,'vamsi']
+ 
+  print(type(v))
+
+  print(dir(v))
+
+
+#append,clear,copy,count,extend,index,insert,pop,remove,reverse,sort
+
+
+ ->append():
+         Add Single Element to The List
+ex:
+  v.append('reddy')
+  print(v)
+
+
+->clear():	
+          Removes all Items from the List
+ ex:
+    print(v.clear())
+
+->copy():
+        return shallow copy of list
+ex:
+   e=v
+   print(e.copy())
+
+count():	
+        returns the number of occurrences of an element in a list
+ex:
+    print(v.count(123))
+
+->extend():
+	Add Elements of a List to Another List
+ex:
+  v1=['sunil','flower']
+  v.extend(v1)
+  print(v)
+
+->index():
+ 	returns smallest index of element in list
+ex:
+   print(v.index('vamsi'))
+
+->insert():	
+	Inserts Element to The List
+ex:
+   v.insert(0,'ashok reddy')
+   print(v)
+
+->pop(): 
+	Removes Element at Given Index
+ex:
+  print(v.pop())
+  print(v)
+
+->remove():	
+          Removes Element from the List
+ex:
+  v.remove('ashok')
+  print(v)
+
+->reverse(): 	
+          Reverses a List
+ex:
+    v.reverse()
+    print(v)
+
+->sort():
+ 	sorts elements of a list
+ex: 
+   q=['a','d','c','e','f','b']
+   q.sort()
+#print(q)   
+
+
+=======================================================================
+
+2->Tuple:
+
+ex:
+       tuple=(1234,'name','address') 
+
+	print(type(tuple))
+        print(dir(tuple))
+
+methods:
+   index ,count
+
+index():
+         position of the value.
+   ex:
+         print(v.index('name'))
+     
+count():
+       count method gives a value.
+     ex: 
+	print(v.count('address'))
+=====================================================================
+
+3->dictionary:
+ex:
+   v={1:'ashok','vamsi':'reddy',20:50,'ashok':'padamala'}
+
+    print (type(v))
+
+    print (dir(v))
+
+attributes:
+
+         clear,copy,fromkeys,get,items,keys,pop,popitem,setdefault,update,values
+
+
+clear():
+	Removes all Items
+
+	ex:
+	    print(v.clear())  
+    
+
+copy():
+	Returns Shallow Copy of a Dictionary
+	
+	ex:
+	    q=v.copy()        	
+
+       	    print("copied values:", q)
+
+fromkeys():
+	creates dictionary from given sequence
+
+	ex:
+	    keys={'a','e','i','o','u'}
+            value='ashok'
+	    w=dict.fromkeys(keys,value)         
+            print(w)
+
+get():	
+       Returns Value of The Key
+
+ 	ex: 
+	   print(v.get('vamsi')) 
+
+items():
+	returns view of dictionary's (key, value) pair.
+      ex:
+	print(v.items()) 
+         
+keys():
+
+ 	Returns View Object of All Keys
+	ex:
+	    print(v.keys())         
+
+pop():	
+	removes and returns element having given key
+        ex:
+	   e=v.pop(1)            
+           print('The popped element is:', e)
+           print('The dictionary is:', v)
+
+popitem():
+	Returns & Removes Element From Dictionary
+    
+        ex:
+         f=v.popitem()
+	 print(f)               
+
+setdefault():
+	Inserts Key With a Value if Key is not Present
+
+  	ex:
+       	   print(v.setdefault('vamsi'))  
+update():
+	Updates the Dictionary.
+     ex:
+        k={'vamsi':'xxx'}
+        v.update(k)              
+        print(v)
+
+values():
+	returns view of all values in dictionary
+
+       ex:
+          print(v.values())   
+
+=================================================================================    
+
+4->set:
+
+ex:
+	x ={'a','e,','o','u'}
+	y ={'a','o','i'}
+	z ={'x','y','z'}
+
+	print(x)
+	print(type(x))
+	print(dir(x))
+
+add():	
+    adds element to a set
+	ex:
+           x.add('i')
+           print(x)
+clear():
+ 	remove all elements from a set.
+        ex:
+          x.clear()
+          print(x)
+
+difference():
+	      Returns Difference of Two Sets
+	ex:
+	print(x.difference(y))
+
+discard(): 	
+	 Removes an Element from The Set 
+
+	ex:
+	  x.discard('o')
+	  print(x)
+
+intersection():
+        	Two or more sets is the set of elements which are common to all sets.
+	ex:
+	   print(x.intersection(y))
+	   print(y.intersection(x))
+union():
+	Returns Union of Sets.
+
+        ex:
+	print(x.union(y,z))
+
+update():
+	Add Elements to The Set.
+
+          ex:
+	    x.update(y) 
+            print(x)
+===============================================================================================================================
+
+->multidimensions:
+		   Multi dimensional lists are lists within lists, or lists within lists within lists... you get the point.
+
+ex:
+   
+ l=[1,2,3,[3,'A','B',('ashok','reddy',{'name':'ashok','no':9035911603,3:[1,2,3,4]})],34,6]
+
+	print(l)
+
+	print(l[3])
+	print(l[3][3])
+	print(l[3][3][2])
+	print("no is:" ,l[3][3][2]['no'])
+	print(l[3][3][2][3])
+
+===========================================================================================================================
+
+->immutabele and mutable:
+   
+   ->immutable:
+              if we change any value in object then the physical memory will be changed.
+           
+               obj: string,number,tuple
+
+   ->mutable :
+               if we changed any value in object then the physical memory will not be changed.
+             
+  	      obj:list,set,dictionary	
+
+==========================================================================================================================
+->id():
+        using id() we can find the physical memory location of the object.
+
+ex:
+    a=123
+    print(id(a))
+
+==========================================================================================================================
+sliceing:
+          using sliceing operation can get the part of the value from the list.
+
+   ex:
+         l=[1,2,3,4,5,6,7]
+          
+          print(l[0:3])
+          print(l[:])
+          print(l[:5])
+          print(l[4:])
+          print(l[: :])
+          print(l[1:20:])
+          print(l[1:20:2])
+          print(l[-7:-3])
+
+============================================================================================================================
+TYPE OF OPERATORS:
+          
+		->ARTHAMATIC OPERATOR .......[ +,-,*,/,% ]
+		->COMPARISION OPERATOP.......[ <,>,<=,>=,==,!= ]
+		->ASSIGNMENT OPERATOR........[ +=,-+,*=,/=,%= ]
+		->LOGICAL OPERATOR...........[ &,|,^,~,<<,>> ]
+		->MEMBERSHIP OPERATOR........[ in, not in ]
+                ->IDENTITY OPERATOR..........[ is,is not ]
+==========================================================================================================================
+
+........ meaning indentation
+
+
+
+CONDITIONAL STATEMENT:
+
+if  :
+
+Returns either value depending on the result of a Boolean expression.
+
+syntax:
+  
+    if condition:
+    ...statement
+    ...statement
+ex:
+       n=10
+       if n==10:
+       ...print("condition true")   
+
+if else:
+     Returns either value depending on the result of a Boolean expression.
+
+syntax:
+  
+      if condition_1:
+      ....statement_block_1
+
+      elif condition_2:
+      ....statement_block_2
+
+      elif another_condition:    
+      ....another_statement_block
+
+      else:
+      ....else_block
+  
+
+     ex:
+    	    n=10
+
+            if n==12:
+             ...print("if block")
+
+             elif n!=10:
+             ....print("1st elif")
+
+             elif n>=15:
+             ....print("2nd elif")
+
+             elif n<=7:
+             ....print("3rd elif")
+
+            else:
+            ....print("else block")
+
+
+
+
+===================================================
+
+COMAPARISON OPERATORS:
+
+ 	ex:
+    	    n=10
+
+            if n==12:
+             ...print("if block")
+
+             elif n!=10:
+             ....print("1st elif")
+
+             elif n>=15:
+             ....print("2nd elif")
+
+             elif n<=7:
+             ....print("3rd elif")
+
+            else:
+            ....print("else block")
+
+
+====================================================
+
+ 
+ARTHAMATIC OPERATOR:
+
+    EX:
+        a = 21
+	b = 10 
+        c = 0
+
+	c = a + b
+	...print("Value of c is ", c)
+
+	c = a - b
+	...print ("value of c is ", c )
+
+	c = a * b
+	...print ("Value of c is ", c )
+
+	c = a / b
+	...print ("Value of c is ", c )
+
+	c = a % b
+	...print ("Value of c is ", c)
+
+	c=a // b
+        ...print ("value of c is ", c)
+
+
+
+================================================================================
+ ASSIGNMENT OPERATOR:
+   
+  EX:
+      n=10
+      n +=2
+      print(n)
+
+      n -=2
+      print(n)
+
+      n *=3
+      print(n)
+
+      n /=2
+      print(n)
+
+      n %=4
+      print(n)
+=================================================================================
+LOGICAL OPERATORS:
+
+   EX:
+
+     	 a=5
+      	 b=8
+
+                  #   AND OPEREND OPERATION
+
+	if a==5 and b==8:
+ 	...print('T AND T :','T')
+
+	if a==6 and b==8:
+ 	...print('F and T :','F')
+
+	if a==5 and b==6:
+    	...print('T and F :','F')
+
+	if a==6 and b==6:
+  	...print('F AND F :','F')
+
+
+                   # OR OPEREND OPERATION
+				
+				
+	if a==5 or b==8:
+	...print('T or T :','T')
+
+	if a==6 or b==8:
+  	...print('F or T :','T')
+
+	if a==5 or b==6:
+  	...print('T or F :','T')
+
+	if a==6 or b==7:
+  	...print('F or F :','F')
+
+==========================================================================
+
+MEMBERSHIP OPERATOR:
+
+   EX:
+    
+     l=['ash','vam','red']
+
+     if 'red' in l:
+     ...print(l)
+
+     if 'red' not in l:
+     ...print('ok')
+
+        #DICTIONARY
+
+     d={'a':'ashok','v':'vamsi','s':'sunil'}
+
+     if 'v' in d:
+     ...print(d)
+
+     if 'z' not in d:
+     ...print ('ok')
+
+          #SET
+
+      s={'ash','var','sam'}
+
+     if 'sam' in s:
+     ...print(s)
+
+     if 'as' not in s:
+     ...print('ok')
+
+=====================================================================================
+
+IDENTITY OPERATOR:
+
+  EX:
+         l=[1,2,3]
+	l2=l
+	l3=l2.copy()
+
+	print('l',id(l))
+	print('l2',id(l2))
+	print('l3',id(l3))
+
+	if l2 is l:
+  	...print('ashok')
+
+	if l3 is not  l:
+  	...print('reddy')
+
+
+========================================================================================================================
+ 
+loops:
+       using loops we can itterate a block of code.
+
+       -In python we have 3 types
+            -for loop
+            -while loop
+            -nested loop
+
+
+for loop:
+	 It will itterate based upon the rannge.
+
+       syntax:
+             for <variable> in <range>:
+
+RANGE():
+         In range default starting value is zero"0".
+
+Syntax:- range(begin,end)  OR  range(begin,end, step)
+
+ex: 
+
+    for i in range(5):
+    ...print(i) 
+
+
+ex: range(begin,end)
+    
+     for i in  range(10,20):
+     .....print(i)
+
+ex:   range(begin,end, step)
+  
+     for i in range(1,15,4):
+     ....print(i)
+===============================================================
+
+example for loop:
+   
+    
+      s="ashok"....................string
+      l=[1,2,3,'ashok']............list
+      t=(1,2,3,'kumar')............tuple
+      s1={1,2,3,'reddy'}...........set
+      d={'name':'ashok','id':123,345:1234}.......dictionary
+      n=123......................number
+
+
+   for i in s:     //string
+   ...print(i)
+
+   for i in l:     //list
+   ...print(i)
+
+   for i in t:     //tuple
+   ...print(i)
+
+   for i in s1:    //set
+   ...print(i)
+
+   for i in d:     //dictionary
+   ...print(i)
+
+   for i in n:      //type error number will nor itterate
+   ...print(i)
+
+==============================================================================================
+
+
+while loop:
+            It will be itterate based upon the condition.
+     
+
+syntax:
+      
+        while condition:
+	...statement_1
+	...statement_n
+
+    ex: 
+          n=1
+	  while n<10:
+          ...print(n)
+          ...n +=1
+
+
+============================================================================================
+
+nested loop:
+             loop inside another loop is called nested loop.
+
+
+syntax:
+   
+         for  <varaible> in <range>:
+          .....
+          .....
+          .....for  <varaible> in <range>:
+	  .........
+          .........for  <varaible> in <range>:
+          ...........
+          ...........
+
+      ex:
+          for x in ['A','B,'C']:
+          ...print(x)
+          ...for y in '23':
+          ......print (y)
+          .........for z in {'name':'ashok',123:345}:
+          ............print(z)
+
+=============================================================================
+LOOOP STATEMENT:
+
+	1.BREAK
+   	2.CONTINUE
+	3.PASS
+============================
+1->BREAK:
+          using break statement we can terminate the loop.
+   
+     ex: 
+         for i in range(10):
+
+         ...if(i==6):
+         ....break
+
+         ...print (i)
+
+
+
+=============================
+2->CONTINUE:
+            using continue statement we can skip the current itteration.After skipping, loop continue with next iteration.
+
+     ex:
+         for i in range(10):
+
+       	 ...if(i==6):
+         ....continue
+
+         ...print (i)
+
+=============================
+3->PASS:
+          pass keyword is used to execute nothing; it means, when we don't want to execute code, the pass can be used to execute empty.
+
+    ex:
+       for i in range(10):
+       ...pass
+       ...if(i==4):
+       ....pass
+==================================
+
+example by both break and continue:
+
+     
+  ex2:
+
+     for i in 'ashok reddy':
+     ...if (i=='k'):
+     ....continue
+     ...if(i==' '):
+     ....break
+     ...print(i)
+     
+
+===========================================================================================================================
+
+FUNCTIONS:
+
+	- Function is a block of code whih contain a name.
+	- By using functions we can reuse a code.
+	- Function block will start after colon(:). 
+syntax:
+         def <function name>():
+         ......
+	 ......
+	 ......
+
+	 <function name>()
+
+ex:
+
+	def add():
+	...a=10
+  	...b=20
+  	...print("addition is: ", a+b)
+
+	add()
+
+==========================================
+
+parameter: 
+	  using parameters we can pass a dynamic value to the function.
+
+ex:
+
+   def add(a,b):
+   print ("addition :", a+b)
+
+   add(2,4)
+   add(5,7)
+   add(10,20)
+
+
+TYPE OF FUNCTIONS:
+  
+   1->REQUIRED ARGUMENTS
+   2->KEYWORD  ARGUMENTS
+   3->DEFAULT  ARGUMENTS
+   4->LENGTH  ARGUMENTS      
+       
+=========================================
+
+1-> REQUIRED ARGUMENTS:
+	  		In required arguments you should pass a value without missing .
+
+
+  ex:
+
+    def add(a,b,c):
+    ...print("A VALUE IS :", a)
+    ...print("B VALUE IS :", b)
+    ...print("C VALUE IS :", c)
+
+    ...print("addition is: ", a+b)
+    ...print("multipul is :", b*c)
+
+    add(10,20,3)
+
+============================================
+2->KEYWORD ARGUMENT:
+                    - using keyword arguments we can a pass a value based on the parameters.
+     		    - keyword arguments always should be the default or required argument.
+
+
+
+	ex:
+
+	def add(a,b,c):
+  	...print("A VALUE IS :", a)
+	...print("B VALUE IS :", b)
+  	...print("C VALUE IS :", c)
+
+        ...print("addition is: ", a+b)
+  	...print("multipul is :", b*c)
+
+	add(10,20,3)
+
+=============================================
+
+3->DEFAULT ARGUMENTS:
+
+		-By using default argument we can pass a default values to the parameters.
+		-default always should follows the required arguments.
+
+	ex:
+            def  add(a,c,b=4):
+ 	    ...print("A VALUE IS :", a)
+  	    ...print("B VALUE IS :", b)
+            ...print("C VALUE IS :", c)
+
+            ...print('arthamatic is :', a+b*c)
+
+
+            add(4,c=10)
+
+==============================================
+
+4->LENGTH ARGUMENTS:
+
+           -using length argument we can get the number of values.
+
+
+      ex1:
+
+           def single(*a):
+ 	   ...print(a)
+
+       	   single(1,2,3,4,5,6)
+	
+	ex2:
+	   def double(**b):
+ 	   ...print(b)
+ 
+       	   double(id=20,eid=30,age=40) 
+   
+	EX3:
+
+           def ash(a,b=5,*c,**d):
+           ...print(a)
+           ...print(b)
+           ...print(c)
+           ...print(d)
+
+           ash(1,3,4,5,6,name='ashok',id=123)   
+         
+
+============================================================================================================================
+
+Return:
+
+	It is used to return a value for function, then it will terminate the function.
+   
+    ex:
+ 
+     def add(a,b):
+     ...print("Before return")
+     ...if (a>=10): return a+b
+     ...print("After return")
+     ...if(b<=10): return a-b
+
+     r=add(5,6)
+
+     print(r)
+
+
+==============================================================================================================================
+
+File Handling:
+	 
+          - The key function for working with file in python open() function.
+	  - The open() function takes two parameters.
+                filename, and mode.
+   
+         There are four different methods (modes) for opening a file:
+
+          "r" - Read - Default value. Opens a file for reading, error if the file does not exist
+
+          "a" - Append - Opens a file for appending, creates the file if it does not exist
+
+          "w" - Write - Opens a file for writing, creates the file if it does not exist
+
+          "x" - Create - Creates the specified file, returns an error if the file exists
+		f
+          "b" - Binary - Binary mode (e.g. images)
+
+
+attributes for file handling:
+
+       finilizing,buffer,open, close, closed, detach,encoding,error,fileno,flesh,isatty,line buffering,mode,name,newline,
+       read,readable,readlines,reconfigure,seek,seekable,tell,truncate,writable,write,write through,write lines.
+
+
+
+syntax:
+
+   
+            <variable name> = open('<file name>','mode')
+
+
+
+
+ex:
+
+   read:
+ 
+        fr=open('ashok.txt','r')
+
+	print ('READ:', fr.read())
+
+	print ('READ LINE :', fr.readline())
+
+	print ('READ LINES :', fr.readlines())       #list format
+
+	print ("length :" ,len(fr.readlines()))
+
+
+
+	for line in fr:
+  	..print(line)
+
+
+
+ex:
+    write:
+            
+        fw=open('reddy.txt','w')
+
+	fw.write('hi ashok \n')
+	a=10	
+	b=20
+	fw.write(str(a+b))
+
+	fw.close()
+
+
+ex:
+  append:
+
+   
+      fw=open('reddy.txt','a')
+
+      fw.write('hi ashok \n')
+      a=10
+      b=20
+      fw.write(str(a+b))
+
+      fw.close()
+
+==============================
+
+with open():
+     
+          -using with open we can open a multiple files.
+          -we no need to close file explicitely.
+
+ex:
+   
+
+   with open('reddy.txt') as fr,open('reddy1.txt','w') as fw:
+   ...fw.write(fr.read())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
